@@ -132,6 +132,9 @@ text-align: center;
     color: #fff;
 }
 @media (max-width:700px) {
+    .main-header{
+        width: auto;
+    }
     .profile-pic img{
         border-radius: 50%;
         width: 35%;
