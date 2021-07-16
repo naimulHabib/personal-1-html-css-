@@ -91,3 +91,39 @@ list-style: none;
 }
     /* _____________________Navigation bar end_________________ */
 
+.header-content{
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+    
+    
+}
+.profile-img{
+    width: 20%;
+    padding: 2rem;
+   
+}
+.profile-img img{
+    border-radius: 50%;
+    width: 100%;
+}
+.header-content h1{
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem;
+    /* text-align: center; */
+    margin-left: rem;
+}
+.header-content h2{
+    color: #fff;
+    font-size: 2rem;
+    /* text-align: center; */
+}
+@media (max-width:700px) {
+    .profile-img{
+        width: 50%;
+    }
+}
