@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: #111;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    margin: 0 8rem ;
+
+}
+.logo{
+font-size: 3rem;
+color: #fff;
+}
+.menu{
+list-style: none;
+}
+.menu li{
+    display: inline;
+    margin: 0 1rem;
+    /* position: fixed;h */
+
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .7px;
+    transition: all 1s ease;
+}
+.menu li a:hover{
+    background-color: rgb(15, 107, 107);
+    padding: 1rem;
+    border-radius: .4rem;
+    color: black;
+}
+.bar{
+    display: none;
+}
+#click{
+    display: none;
+}
+@media (max-width:700px) {
+    .menu{
+        margin-top: 3rem;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #111;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .7s ease;
+        z-index: 1;
+    }
+    #click:checked ~ .bar i::before{
+        content: "\f00d";
+    }
+    .menu li a{
+        font-size: 2.5rem;
+    }
+    .menu li{
+        margin: 1rem 0;
+    }
+    .bar{
+        display: block;
+        color: #fff;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    #click{
+        display: none;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+
+    }
+}
+    /* _____________________Navigation bar end_________________ */
+
+
+    .main-header{
+        position: relative;
+        top: 5rem;
+        left: 40%;
+    }
+    .profile-pic{
+        margin-bottom: 2rem;
+        margin-left: 7rem;
+    }
+.profile-pic img{
+    border-radius: 50%;
+    width: 15%;
+    
+}
+.content{
+ position: absolute;
+ left: 4%;
+ /* top: 30rem; */
+}
+.content h1{
+color: #fff;
+font-size: 3rem;
+text-align: center;
+}
+.content h2{
+    font-size: 2rem;
+    color: #fff;
+    margin-top: .5rem;
+    text-align: center;
+}
+.icon{
+    margin-top: .8rem;
+    /* margin-left: 3rem; */
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+.icon a{
+    text-decoration: none;
+    color: #fff;
+}
+@media (max-width:700px) {
+    .profile-pic img{
+        border-radius: 50%;
+        width: 35%;
+        margin-left: -9rem;
+        
+    }
+    .content{
+        position: absolute;
+        left: -18%;
+        /* top: 30rem; */
+       }
+}
