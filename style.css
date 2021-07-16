@@ -8,12 +8,14 @@ html{
 }
 body{
     background-color: #111;
+    /* width: 100%; */
 }
 .navigation{
     display: flex;
     justify-content: space-between;
     padding-top: 3rem;
     margin: 0 8rem ;
+    /* width: 100vw; */
 
 }
 .logo{
@@ -89,61 +91,3 @@ list-style: none;
 }
     /* _____________________Navigation bar end_________________ */
 
-
-    .main-header{
-        position: relative;
-        top: 5rem;
-        left: 40%;
-    }
-    .profile-pic{
-        margin-bottom: 2rem;
-        margin-left: 7rem;
-    }
-.profile-pic img{
-    border-radius: 50%;
-    width: 15%;
-    
-}
-.content{
- position: absolute;
- left: 4%;
- /* top: 30rem; */
-}
-.content h1{
-color: #fff;
-font-size: 3rem;
-text-align: center;
-}
-.content h2{
-    font-size: 2rem;
-    color: #fff;
-    margin-top: .5rem;
-    text-align: center;
-}
-.icon{
-    margin-top: .8rem;
-    /* margin-left: 3rem; */
-    color: #fff;
-    font-size: 3rem;
-    text-align: center;
-}
-.icon a{
-    text-decoration: none;
-    color: #fff;
-}
-@media (max-width:700px) {
-    .main-header{
-        width: auto;
-    }
-    .profile-pic img{
-        border-radius: 50%;
-        width: 35%;
-        margin-left: -9rem;
-        
-    }
-    .content{
-        position: absolute;
-        left: -18%;
-        /* top: 30rem; */
-       }
-}
